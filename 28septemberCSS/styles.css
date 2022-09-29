@@ -1,0 +1,29 @@
+
+body{
+    color: brown;
+    background-color: aqua;
+    background-image: url(/28septemberCSS/styles/images/bckgrd2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section{
+    background-color: rgb(230, 173, 173);
+    background-image: url(/28septemberCSS/styles/images/bckgrd1.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size:3rem;
+}
+#p1{
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+#p2{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:black;
+}
+#p3{
+    font-size: 2.5rem;
+}
+
+
