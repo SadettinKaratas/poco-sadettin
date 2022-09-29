@@ -1,0 +1,16 @@
+table{
+    text-align: center;
+    border: 1px solid black;
+    background-image: url("/28septemberCSS/styles/images/bckgrd2.jpg");
+}
+tr, td {
+    border: 1px dotted black;
+}
+
+fieldset {
+    border: none;
+    }  
+
+input{ margin:5px 0 5px 0px;
+
+}

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/28septemberCSS/freeHtmlCssExercices/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="table">
+        <table>
+        <tr>
+            <td>Quick</td>
+            <td colspan="2">Brown Fox</td>
+            <td>jumps</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Over the</td>
+            <td>lazy</td>
+            <td>dog</td>
+            <td>and</td>
+        </tr>
+        <tr>
+            <td>then</td>
+            <td>it</td>
+            <td>fall</td>
+        </tr>
+        <tr>
+            <td colspan="3">prey to a lion</td>
+        </tr>
+    </table>
+    </section>
+    <section id="form">
+        <h1> <b>Travel Reservation Form</b></h1>
+        <p> <b>* denotes mandatory</b></p>
+        <form action="" method="get">
+            <label for="fname">Full name*:</label><br>
+            <input type="text" name="fname" id="fname" placeholder="First Name LastNAme"><br>
+            <label for="email">Email Adress</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Adress"> <br>
+            <label>Select Tour Package* :</label><br>
+            <select name="package">
+             <option value="Goa" >Goa</options>
+             <option value="Kashmir" >Kashmir</options>
+             <option value="Rajasthan" >Rajasthan</options>
+            </select><br>
+            <label for="Adate">Arrival Date*</label><br>
+            <input type="date" id="Adate" name="Adata" placeholder="m/d/y"><br>
+            <label for="number">Number of Persons</label><br>
+            <input type="number" name="number" id="number" placeholder="Unknown Person"><br>
+            <p>What would you want avail:</p>
+            <label for="board">Boarding</label>
+            <input type="checkbox" id="board" name="board"><br>
+            <label for="food">Fooding</label>
+            <input type="checkbox" name="food" id="food"><br>
+            <label for="seening">Sight Seeing</label>
+            <input type="checkbox" name="seening" id="seening"><br>
+            <label for="coupon">Discount Coupon Code</label> <br>
+            <input type="text" name="coupon" id="coupon">
+            <fieldset>
+                <legend>Terms and Conditions</legend>
+                <input type="radio" id="terms" name="terms" checked>
+                <label for="terms">I Agree</label>
+                <input type="radio" id="terms2" name="terms">
+                <label for="terms2">I don't agree</label>
+            </fieldset>
+            <input type="submit" value="Complete Reservation">
+        </form>
+    </section>
+</body>
+</html>
