@@ -4,77 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/30septembreExercices/styles.css">
     <title>Document</title>
+<style>
+    
+    #container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between ;
+        background-color: aqua;
+        height:400px;
+        text-align: center;
+      
+    }
+    .element{
+        display:block;  
+        width:50px;
+        /* flex: none; */
+        height: 50px;
+        padding: 10px;
+        background-color: burlywood;
+        border: 1px solid black;
+        margin: auto 20px auto 20px;
+    }
+    .element-2{
+        display:block;  
+        flex: 1;
+        height: 50px;
+        padding: 10px;
+        background-color: burlywood;
+        border: 1px solid black;
+        margin: auto 20px auto 20px;
+    }
+    .element-4 {
+        display:block;
+        align-self:center;
+        width:50px;
+        height: 50px;
+        padding: 10px;
+        background-color: burlywood;
+        border: 1px solid rgb(172, 25, 25);
+        margin: auto 20px auto 20px;
+    }
+
+</style>
 </head>
+
 <body>
-    <header id="navigation">
-        <nav >
-            <h1>Menu</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a>
-                <ul>
-                    <li><a href="#">Engineering</a></li>
-                    <li><a href="#">Telecom</a></li>
-                    <li><a href="#">Energy</a></li>
-                    <li><a href="#">Finance</a></li>
-                    <li><a href="#">Consultancy</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        </nav>
-    </header>
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <div id="popup">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt nobis quia architecto, dolore odit aperiam. Ex necessitatibus deleniti, cupiditate asperiores officiis, praesentium, eius quia at nisi amet ipsam quibusdam eveniet!
-            <p id="child1">This is another child element</p>
-            <p id="child2">This is second child</p>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quisquam impedit ipsum adipisci perferendis non, illum dolorum iusto sit aspernatur magnam? Fuga dolores ex assumenda mollitia enim! Ratione, a blanditiis.</p>
-       
-    </main>
+    <div id="container">
+        <div class="element">1</div>
+        <div class="element-2">2</div>
+        <div class="element">3</div>
+        <div class="element-4">4</div>
+    </div>
     
 </body>
 </html>
