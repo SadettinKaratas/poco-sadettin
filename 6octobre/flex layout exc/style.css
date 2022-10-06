@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header{
+    width: 100%;
+    min-height: 300px;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+    min-height: 300px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article:first-child{
+    background-color: brown;
+}
+article:nth-child(2){
+    background-color: rgb(133, 104, 104);
+}
+article:nth-child(3){
+    background-color: rgb(30, 177, 40);
+}
+article:nth-child(4){
+    background-color: rgb(188, 246, 130);
+}
+
+@media (min-width:40em) and (max-width:60em) {
+    section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article{
+         width: 50%;
+    }
+
+}
+
+@media (min-width:61em) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article{
+         width: 33.3%;
+    }
+   .signup{
+        order: 4;
+        min-height: 200px;
+        width: 100%;
+   }
+
+}
