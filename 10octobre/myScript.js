@@ -1,16 +1,15 @@
+// const birthYear = 1988;
+// let futureYear = 2035;
+// let ageBeforeBirthday = futureYear - birthYear;
+// let ageAfterBirthday = ageBeforeBirthday + 1;
+// document.write(`You will be at either ${ageAfterBirthday}  or ${ageBeforeBirthday} `)
 
-var x = 10;//comment this is my firt value
-var firstVumber = 10;
-// var myFirstSentence = "Hello Worrld!"
-// var bool = ture;
+// let userInput = promt("Pleaser Write")
+// alert = ("Hello")
 
-// const pi= 3.222 //assign variables
-
-// let name=12; // assign variables
+// document.getElementById("button") = "Hello Dolly.";
 
 
-console.log("my first print");
-
-const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
-
-console.log(sampleStr);
+function myfunction (p1, p2) {
+    return p1 * p2;}
+document.write(myfunction(4,10000))
