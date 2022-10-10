@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="get">
+        <div class="blackthickbanner"></div>
+    <h1>Profil</h1> <br>
+
+        <p>Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</p> <br>
+        <div class="firstthinbanner"></div> <br>
+        <h3>Persönliche Daten</h3><br>
+        <div class="titel">
+            <label for="titel">Titel</label>
+        <input type="text" id="titel" name="titel" placeholder="optional" class="type1">
+        </div><br>
+        <div class="vorname">
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" class="type3" required>
+        </div> <br>
+        <div class="nachname">
+            <label for="nachname">Nachname</label>
+            <input type="text" class="type1" id="nachname" name="nachname" placeholder="Muster"  required>
+        </div><br>
+        <div>
+            <fieldset><legend>Geschlecht</legend><br>
+            <div>
+            <label for="W">W</label>
+            <input type="radio" name="geschlecht" class="type2" id="W" required checked>
+            </div>
+            <div>
+                <label for="M">M</label>
+                <input type="radio" name="geschlecht" id="M" required class="type2">
+            </div>
+            </fieldset>
+        </div>
+        <div>
+            <!-- check if we put required for all input in a radio button list -->
+            <fieldset><legend>Sprache</legend> <br>
+            <div>
+                <label for="DE">DE</label>
+                <input type="radio" class="type2" name="Sprache" id="DE" required>
+            </div>
+            <div>
+                <label for="FR">FR</label>
+                <input type="radio" name="Sprache" id="FR" class="type2" required checked>
+            </div>
+            <div>
+                <label for="IT">IT</label>
+                <input type="radio" class="type2" name="Sprache" id="IT" required>
+            </div>
+            </fieldset>
+        </div> <br>
+        <div class="secondthinbanner"></div>
+        <h3>Kontaktdaten</h3> <br>
+        <div>
+            <label for="telefon">Telefon</label>
+            <input type="number" id="telefon" class="type3" name="telefon" required> 
+        </div><br>
+        <div>
+            <label for="mobile">Mobile</label>
+            <input type="number" class="type1" id="mobile" name="mobile" placeholder="optional">
+        </div><br>
+        <div>
+            <label for="mobile">Hauptnummer</label>
+            <input type="number" id="hnumber" class="type1" name="mobile" placeholder="optional">
+        </div> <br>
+
+        <div>
+            <label for="Fax">Fax</label>
+            <input type="number" id="Fax" name="Fax" class="type1" placeholder="optional">
+        </div> <br>
+        
+        <div>
+            <label for="mail1">Mail 1</label>
+            <input type="email" class="type3" id="mail1" name="mail1" required>
+        </div><br>
+
+        <div>
+            <label for="mail2">Mail 2</label>
+            <input type="email" class="type1" id="mail2" name="mail2" placeholder="optional">
+        </div><br>
+        
+        <div class="thirdthinbanner"></div>
+        
+            <h3>Adressdaten</h3> <br>
+        
+        <div><label for="firma">Firma</label>
+        <input type="text" id="firma" class="type3" name="firma" required>
+        </div><br>
+        
+        <div>
+        <label for="zfirma">Zusatz Firma</label>
+        <input type="text" id="zfirma" name="zfirma" class="type1" placeholder="optional"> 
+        </div><br>
+        
+        <div>
+        <label for="hpage">Homepage</label>
+        <input type="text" class="type1" id="hpage" name="hpage" placeholder="optional">
+        </div> <br>
+        
+        <div>
+        <label for="number">Adresse/Haus Nr</label>
+        <input type="text" id="number" name="adresse"  class="type3">
+        <input type="number" name="adresse" class="type3" >
+        </div><br>
+        
+        <div>
+        <label for="zadresse">Zusatz Adresse</label>
+        <input type="text" id="zadresse" name="zadresse" class="type1" placeholder="optional"> 
+        </div><br>
+
+        <div>
+        <label for="postfach">Postfach Adresse</label>
+        <input type="text" class="type1" id="postfach" name="postfach" placeholder="optional">
+        </div> <br>
+       
+        
+        <div>
+        <label for="plz/ort">PLZ/Ort Adresse</label>
+        <input type="number" id="plz/ort" class="type3" name="plz/ort">
+        <input type="number" id="ort" name="plz/ort" class="type3">
+        </div> <br>
+        <div>
+            <label for="kanton">Kanton/Land</label>
+            <input type="text" id="kanton" name="kanton" placeholder="optional" class="type1">
+        </div>
+    </form>
+
+    <label for="Geschlecht">Geschlecht</label>
+    <ul role="group" aria-labelledby="Geschlecht" class="switch">
+        <li>
+            <input type="radio" name="Geschlecht" value="w" id="GeschlechtW" required>
+            <label for="GeschlechtW">w</label>
+            <span class="error-only"><svg xmlns="http://www.w3.org/2000/svg" class="si-glyph-circle-error">
+                <use xlink:href="img/sprite.svg#si-glyph-circle-error"></use>
+            </svg></span>
+        </li>
+        <li>
+            <input type="radio" name="Geschlecht" value="m" id="GeschlechtM" checked="">
+            <label for="GeschlechtM">m</label>
+        </li>
+    </ul> 
+
+</body>
+</html>
