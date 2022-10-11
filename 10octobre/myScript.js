@@ -3,13 +3,6 @@
 // let ageBeforeBirthday = futureYear - birthYear;
 // let ageAfterBirthday = ageBeforeBirthday + 1;
 // document.write(`You will be at either ${ageAfterBirthday}  or ${ageBeforeBirthday} `)
-
-// let userInput = promt("Pleaser Write")
-// alert = ("Hello")
-
-// document.getElementById("button") = "Hello Dolly.";
-
-
 // function myfunction (p1, p2) {
 //     return p1 * p2;}
 // document.write(myfunction(4,10000))
@@ -41,34 +34,59 @@
 // }
 
 // Ternary Conditions
-const yourage = 26;
+// const yourage = 26;
 
-const beverage = yourage >=25 ? "Beer" : "Tea"
+// const beverage = yourage >=25 ? "Beer" : "Tea"
 
-document.write (beverage)
+// document.write (beverage)
 
-let age = 17;
-let result;
+// let age = 17;
+// let result;
 
-result = age >=18 ? "User can view" : "User can not view"
-document.write(result)
+// result = age >=18 ? "User can view" : "User can not view"
+// document.write(result)
 
 // Switch Condition
 
-let fruit = "banana";
+// let fruit = "banana";
 
-switch (fruit){
-    case "apple":
-    alert(`Your fruit is apple`)
+// switch (fruit){
+//     case "apple":
+//     alert(`Your fruit is apple`)
     
-    break;
+//     break;
    
-    case "banana":
-    alert(`Your fruit is banana`)
+//     case "banana":
+//     alert(`Your fruit is banana`)
 
-    break;
+//     break;
 
-    default:
-     alert(`You have no fruit`)
+//     default:
+//      alert(`You have no fruit`)
     
+// // }
+
+let a = 0;
+
+while (a < 100){
+    console.log('1');
+    document.write("hi " + a)
+    // a = a + 1
 }
+
+// let mystery_number = 5; 
+// let input;
+
+// for (let i = 0; i <100; i++)
+// {
+//     document.write("hi " + i)
+// }
+// document.write("finished")
+
+
+// let team = ["Linus", "Helene", "Christina", "Fatih"]
+
+// for (let i = 0; i <team.length; i++) {
+//     document.write(i + " Hi " + team[i])
+// }
+
