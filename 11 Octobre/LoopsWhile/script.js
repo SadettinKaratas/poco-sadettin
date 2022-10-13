@@ -2,6 +2,6 @@
 let a = 0;
 
 while (a < 100){
-    document.write(`${a} Hi `)
+    document.write(`Hi ${a} `)
     a++
 }

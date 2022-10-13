@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: lightblue;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div{
+    display: flex;
+    width: 16.6%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div{
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      div{
+        width: 50%;
+      }
+}
