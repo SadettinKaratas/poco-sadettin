@@ -1,32 +1,44 @@
 
+
 function bigHeader (){
+    if(window.innerWidth >= 1024) {
     let header = document.getElementById("header");
-    if(window.matchMedia("(min-width: 1024px)"){
-    header.style.fontSize = "5em"
-    header.style.backgroundColor = "lightblue" }
-
-
+    header.style.fontSize = "3em"
+    header.style.backgroundColor = "#150050"
+    header.style.color = "#ADDDD0"; 
+    }
 }
 
 function normalHeader() {
-    header.style.fontSize = "2em"
+    header.style.fontSize = "2em";
+    header.style.backgroundColor = "#6F38C5";
+    header.style.color = "white"; 
 }
+   
+
+function photoAction(id, magicPhrase, magicWord){
+    let photoBigger = document.getElementById(id);
+    photoBigger.style.width = '300px';
+    photoBigger.style.border = '5px dotted black';
+    photoBigger.style.borderRadius = '5px';
+    let para = photoBigger.getElementsByTagName('img');
+    para.style.opacity = 1;
 
 
+function question(id, magicPhrase, magicWord)
 
-
-function myfirstfunction(){
-   let ismet = document.getElementById("ismet");
-   let divismet = document.getElementById("divismet");
-   this.style.width = "50%";
-   this.style.width = "50%"
+    for (let index = 1; index < 4; index++) {
+        let input = prompt (magicPhrase);
+        if (input == magicWord){
+            alert("Well Done")
+            break;
+        } 
+            // alert("Well Done")
+    }
 }
-
-
-
-// function myfirstfunction(){
-//     let abdul = document.getElementById("abdul");
-//     let divabdul = document.getElementById("divabdul");
-//     divabdul.style.width = "50%";
-//     abdul.style.width = "50%"
-//  }
+function normalSize (id){
+    let photoNormal = document.getElementById(id); 
+    photoNormal.style.width = "209.7px" 
+    photoNormal.style.border = 'none';
+    photoNormal.style.borderRadius = 'none';
+}

@@ -9,38 +9,94 @@
   </head>
   <body>
     <header>
-      <h1 onmouseover="bigHeader()" id="header" onmouseout="normalHeader()" >
+      <h1 onmouseover="bigHeader()" id="header" onmouseout="normalHeader()">
         Powercoder Stars <br />
         Automn 2022
       </h1>
     </header>
 
     <main>
-      <div onmouseover="myfirstfunction(id1)" id="divismet" ><img id="ismet" onmouseout="myfirstfunction()" src="Photos/01-Powercoders_Portrait_5.jpg" alt="" />
-    <p ></p></div>
-      <div onclick="myfirstfunction(id2)" id="divabdul" ><img onclick="myfirstfunction()" id="abdul"  src="Photos/03-Powercoders_Portrait_7.jpg" alt="" /></div>
-      <div><img src="Photos/05-Powercoders_Portrait_9.jpg" alt="" /></div>
-      <div><img src="Photos/07-Powercoders_Portrait_11.jpg" alt="" /></div>
-      <div><img src="Photos/09-Powercoders_Portrait_13.jpg" alt="" /></div>
-      <div><img src="Photos/11-Powercoders_Portrait_15.jpg" alt="" /></div>
-      <div><img src="Photos/14-Powercoders_Portrait_18.jpg" alt="" /></div>
-      <div><img src="Photos/16-Powercoders_Portrait_21.jpg" alt="" /></div>
-      <div><img src="Photos/17-Powercoders_Portrait_22.jpg" alt="" /></div>
-      <div><img src="Photos/19-Powercoders_Portrait_24.jpg" alt="" /></div>
-      <div><img src="Photos/21-Powercoders_Portrait_27.jpg" alt="" /></div>
-      <div><img src="Photos/22-Powercoders_Portrait_28.jpg" alt="" /></div>
-      <div><img src="Photos/24-Powercoders_Portrait_30.jpg" alt="" /></div>
-      <div><img src="Photos/25-Powercoders_Portrait_31.jpg" alt="" /></div>
-      <div><img src="Photos/27-Powercoders_Portrait_33.jpg" alt="" /></div>
-      <div><img src="Photos/29-Powercoders_Portrait_35.jpg" alt="" /></div>
-      <div><img src="Photos/31-Powercoders_Portrait_37.jpg" alt="" /></div>
-      <div><img src="Photos/32-Powercoders_Portrait_38.jpg" alt="" /></div>
-      <div><img src="Photos/33-Powercoders_Portrait_39.jpg" alt="" /></div>
-      <div><img src="Photos/34-Powercoders_Portrait_40.jpg" alt="" /></div>
-      <div><img src="Photos/36-Powercoders_Portrait_42.jpg" alt="" /></div>
-      <div><img src="Photos/38-Powercoders_Portrait_44.jpg" alt="" /></div>
-      <div><img src="Photos/40-Powercoders_Portrait_46.jpg" alt="" /></div>
-      <div><img src="Photos/44-Powercoders_Portrait_1.jpg" alt="" /></div>
+
+
+
+      <div onclick="photoAction('id1', 'Hello My name is Ismet, Do you remember the special thing abaour me?','jokes')" id="id1" onmouseout="normalSize('id1')">
+        <img id="ismet"  src="Photos/01-Powercoders_Portrait_5.jpg"
+          alt=""/>
+      <p>This is alternative.</p>
+      </div>
+      <div onclick="photoAction(id='id2', 'Hello My name is Abdul Fatah, Do you remember my birthplace?', 'Switzerland')" id="id2" onmouseout="normalSize('id2')">
+        <img
+    
+          src="Photos/03-Powercoders_Portrait_7.jpg"
+          alt=""
+        />
+      </div>
+      <div onclick="photoAction('id3', 'Hello my name is Yulia, Do you remember my spécial thing', 'baking breads')" id="id3" onmouseout="normalSize('id3')">
+        <img src="Photos/05-Powercoders_Portrait_9.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id4', 'Hello, My name is Tuba, Do you remember my special thing', 'my son')" id="id4" onmouseout="normalSize('id4')" >
+        <img src="Photos/07-Powercoders_Portrait_11.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id5','Hello, My name is Hasan, what sport i was playing professionally before getting injured?', 'volleyball')" id="id5" onmouseout="normalSize('id5')">
+        <img src="Photos/09-Powercoders_Portrait_13.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id6', 'Hello, My name is Mustafa. Why i am not here now?', 'i am working')" id="id6"  onmouseout="normalSize('id6')">
+        <img src="Photos/11-Powercoders_Portrait_15.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id7', 'Hello,My name is Oguz. What was the most expensive NFT in my presentation?', 'a picture')" id="id7" onmouseout="normalSize('id7')" onmouseout="normalSize('id7')">
+        <img src="Photos/14-Powercoders_Portrait_18.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id8', 'Hello, My name is Yusuf. I can cook delicious ... foods. What sould i put in the blank', 'turkish')" id="id8" onmouseout="normalSize('id8')">
+        <img src="Photos/16-Powercoders_Portrait_21.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id9', 'Hello,My name is Emin. What i cooked in my tutorial video?', 'pizza')" id="id9" onmouseout="normalSize('id9')">
+        <img src="Photos/17-Powercoders_Portrait_22.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id10', 'Hello, My name is Enes. Do you know my former prefession that we have a microphone to do it, in the streets, before cameras', 'reporter')" id="id10" onmouseout="normalSize('id10')">
+        <img src="Photos/19-Powercoders_Portrait_24.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id11', 'Hello, My name is Serkan. Do you know in which continent i worked in the past?', 'africa')" id="id11" onmouseout="normalSize('id11')">
+        <img src="Photos/21-Powercoders_Portrait_27.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id12', 'Hello, My name is Jyothi. How many festival i presented to you in my presentation?', '5')" id="id12" onmouseout="normalSize('id12')">
+        <img src="Photos/22-Powercoders_Portrait_28.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id13', 'Hello,My name is Olena. Before Coming here i was working in ...', 'university')" id="id13" onmouseout="normalSize('id13')">
+        <img src="Photos/24-Powercoders_Portrait_30.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id14', 'Hello, My name is Ariani. Do i use mac or Windows?', 'mac')" id="id14" onmouseout="normalSize('id14')">
+        <img src="Photos/25-Powercoders_Portrait_31.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id15', 'Hello, My name is Sadettin.Do you remember my special thing?', 'truck driver')" id="id15"onmouseout="normalSize('id15')" >
+        <img src="Photos/27-Powercoders_Portrait_33.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id16', 'Hello, My name is Shamil. Do you know how many kids i have?', '2')" id="id16" onmouseout="normalSize('id16')" >
+        <img src="Photos/29-Powercoders_Portrait_35.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id17', 'Hello, My name is Fatih. Do you remember my special thing?', 'football')" id="id17" onmouseout="normalSize('id17')">
+        <img src="Photos/31-Powercoders_Portrait_37.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id18', 'Hello, My name is Baris. Do you remember my special thing?', 'runner')" id="id18"onmouseout="normalSize('id18')">
+        <img src="Photos/32-Powercoders_Portrait_38.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id19', 'Hello, My name is Murat. What is the worst case scenario that we can have in Career Days that i had recently?', 'covid')" id="id19" onmouseout="normalSize('id19')">
+        <img src="Photos/33-Powercoders_Portrait_39.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id20', 'Hello, My name is Sevim. Do you remember my special thing?', 'ski after 40 years old')" id="id20" onmouseout="normalSize('id20')">
+        <img src="Photos/34-Powercoders_Portrait_40.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id21', 'Hello, My name is Senay. Do you remember my special thing?', 'my  blind cat')" id="id21" onmouseout="normalSize('id21')" >
+        <img src="Photos/36-Powercoders_Portrait_42.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id22', 'Hello, My name is Arwa. Do you remember my special thing?', 'scuba diving')" id="id22" onmouseout="normalSize('id22')">
+        <img src="Photos/38-Powercoders_Portrait_44.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id23', 'Hello, My name is Ali. Do you remember my special thing?', 'handball')" id="id23" onmouseout="normalSize('id23')">
+        <img src="Photos/40-Powercoders_Portrait_46.jpg" alt="" />
+      </div>
+      <div onclick="photoAction('id24','Hello,My name is Bilal. Do you remember my special thing?', 'survivor')" id="id24" onmouseout="normalSize('id24')">
+        <img src="Photos/44-Powercoders_Portrait_1.jpg" alt="" />
+      </div>
     </main>
 
     <script src="script.js"></script>

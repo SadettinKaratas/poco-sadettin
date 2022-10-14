@@ -10,7 +10,7 @@
 }
 
 header {
-  background-color: lightblue;
+  background-color: #ADDDD0;
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -19,7 +19,6 @@ header {
 html {
   box-sizing: border-box;
 }
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -30,9 +29,17 @@ div{
     width: 16.6%;
 }
 
+p{
+    display: none;
+}
+
+
 img {
   max-width: 100%;
   max-height: 100%;
+
+  padding: 2px;
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
