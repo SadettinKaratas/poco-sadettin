@@ -15,10 +15,22 @@ header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+a{
+    font-style: none;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    
+    color: black
+
+}
 
 html {
   box-sizing: border-box;
 }
+
+
 main {
   display: flex;
   flex-wrap: wrap;
