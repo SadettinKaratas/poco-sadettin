@@ -1,0 +1,57 @@
+
+body{
+    text-align: center;
+    background-image: url(tpg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.calculator { 
+
+    background: white;
+    max-width: 80%;
+    margin: auto;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-weight: bold;
+    font-size: 3em;
+    padding: 10px;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: green;
+}
+
+button{
+    padding: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    width: 40%;
+    color: white;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}
+
+.initbutton{
+    background-color: black;
+}
+#save_btn{
+    margin-top: 5px;
+    width: 81%;
+    color: white;
+    background-color: green;
+}
+p{
+    margin-bottom: 30px;
+    text-align: start;
+    margin-left: 60px;
+}
