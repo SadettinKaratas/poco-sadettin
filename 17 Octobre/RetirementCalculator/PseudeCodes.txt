@@ -1,0 +1,11 @@
+1- INPUT get user Age
+2- INPUT get user desired retirement age
+3- PROCESS Check if the desired retirement age is between 65-75 if so go to step 4 else return 2 ("Please write an age between 65-75")
+4- PROCESS Find his birth year by (currentyear-his age)
+5- PROCESS Find his desired retirement year by (currentyear+his desiredretirement age)
+6- Output "You have (desired retirement age-his age) years to retire in ((currentyear+his desiredretirement age)
+END
+
+
+
+

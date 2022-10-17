@@ -1,0 +1,11 @@
+i will get first his age
+i will get get secondly his desired retirement age
+if retirement age is beetwen 65-75 i will let him continue otherwise i will demande another age (here i take 65 as general age for retirement)
+i will find his date of birth by substracting his current age from the current year
+i will find out his desired year of retirement by adding his retiremnt age to his year of birth
+i will output his year of retirment and and how many years left as
+
+Constraints: 
+
+1- He must be equal or over 65 
+2- He can choose max 75 as retirement age

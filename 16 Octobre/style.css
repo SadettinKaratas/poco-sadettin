@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: 50px auto ;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    min-width: 10em;
+    background-color: inherit;
+
+    
+}
+
+h1{
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.homeboard{
+    background-color: black;
+    min-width: 140px;
+    color:red;
+    font-size: 8em;
+}
+.guestboard{
+    background-color: black;
+    min-width: 140px;
+    color:red;
+    font-size: 8em;
+}
+
+.pointscontainerhome{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+
+}
+.pointscontainerguest{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+.homeboard{
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.guestboard{
+    text-align: center;
+    border-radius: 10px;
+}
+
+button{
+    width: 29%;
+    font-size: 1.5em;
+    background-color:inherit ;
+    border: 1px white solid;
+    border-radius: 3px;
+    color: rgb(228, 220, 220);
+    background-color: inherit;
+}
