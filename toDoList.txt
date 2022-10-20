@@ -1,0 +1,20 @@
+
+To-Do-List
+
+
+Mandatory;
+- Add a new task 
+- Mark as done
+- Mark as undone
+- Delete the task
+
+Nice to have;
+
+- Update the task description
+- Add an image marked as done smiling
+- Putting Reminder
+- Putting Deadlines
+- Sort the list (deadlines, alphabetically)
+- Task groupe icons
+- Sound for tasks completed
+ 

@@ -18,6 +18,6 @@ function result() {
       yearsLeft  +
       "years left until you can retire";
     resultDiv.textContent +=
-      "<br>" + "It's 2022, sou you can retire in " + userRtrmnYear;
+      '<br>' + "It's 2022, sou you can retire in " + userRtrmnYear;
   }
 }

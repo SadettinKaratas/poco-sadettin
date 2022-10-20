@@ -1,0 +1,11 @@
+
+1- Ask user to input its tasks 	
+2- Take inputs and create a to-do-list and display	
+3- Ask user if he/she wants to create a new task if yes; 
+4- Ask user to input and create the task and display
+5- Ask user if he/she wants to mark as done if yes mark the task as done and display	
+6- Ask user if he/she wants to mark as undone a task, reactivate the task and display
+7- Ask user if he/she wants to update a task if yes;
+8- Ask user to input and update the task and and display			
+9- Ask user if he/she wants to delete a task as if yes delete the task and display
+	
