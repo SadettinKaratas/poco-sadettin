@@ -79,11 +79,15 @@ var books = [
     }
   ];
 
+  //Creating Variables
   let bookTitle;
   let bookImage;
-  let author;
+  let bookAuthor;
   let readOrNot;
+  let ulList;
+  let liForImage;
 
+    //Creating my first heading
   let heading = document.createElement("h1");
   document.body.appendChild(heading);
   heading.textContent = "My Books List";
@@ -91,24 +95,38 @@ var books = [
 
 
   for (var i = 0; i <= books.length - 1; i++) {
+
+     //   Create 1st paragraph for title
         bookTitle = document.createElement("p");
         document.body.appendChild(bookTitle);
+        bookTitle.style.fontWeight = "bold";
         bookTitle.textContent = books[i].title;
-        author = document.createElement("p");
-        document.body.appendChild(author)
-        bookTitle.textContent = books[i].author;
-        readOrNot=document.createElement("p");
-        document.body.appendChild(readOrNot);
-        if (books.alreadyRead==false){
-            readOrNot.textContent= "Not Read"
-        }else{ 
-            readOrNot.textContent= "Read"
+        ulList = document.createElement("ul");
+        document.body.appendChild(ulList);
+        
+        //   Create 2nd paragraph for author
+        bookAuthor = document.createElement("li");
+        ulList.appendChild(bookAuthor)
+        bookAuthor.textContent = books[i].author;
 
+         //   Create 3rd paragraph for read-or-not
+        readOrNot=document.createElement("li");
+        ulList.appendChild(readOrNot);
+        if (books[i].alreadyRead==false){
+            readOrNot.textContent= "Not Read"
+           
+        }else{ 
+            readOrNot.textContent= "Read";
+            bookImage.style.border = "10px red solid"
+        
         }
+        //Creating img tag
+        liForImage = document.createElement("li")
+        ulList.appendChild(liForImage)
         bookImage = document.createElement("img");
         bookImage.src = books[i].img;
         bookImage.style.width = "100px"
-        document.body.appendChild(bookImage)
+        liForImage.appendChild(bookImage)
 
     
   }
