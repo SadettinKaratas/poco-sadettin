@@ -15,10 +15,10 @@ function addNewTask() {
 
   textSpan = document.createElement("span");
   taskItem = document.createTextNode(document.getElementById("new-task").value);
-  textSpan.appendChild(taskItem)
+  textSpan.appendChild(taskItem);
   taskList.appendChild(textSpan);
 
-  markAsDone = document.createElement("span")
+  markAsDone = document.createElement("span");
   markAsDone.textContent = " Done "
   markAsDone.style.border = "1px solid black";
   markAsDone.className = "done";
@@ -27,7 +27,7 @@ function addNewTask() {
   delButton= document.createElement("span");
 
   taskList.appendChild(markAsDone)
-  delButton.textContent=" X"
+  delButton.textContent=" Delete"
   delButton.style.border = "1px solid black";
   delButton.className = "close";
   taskList.appendChild(delButton)

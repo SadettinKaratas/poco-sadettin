@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+/* Here is general header part stlying for my works */
+
+.header-devblog{
+    width: 100%;
+    background-image: url("/images/background.png");  
+    background-size:contain;
+  }
+  
+  .header-ul-devblog{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .header-button-devblog{
+    display: inline-block;
+    padding: 10px;
+    margin:10px;
+    background-color: #F0DB4F;
+    border-radius: 5px;
+  }
+  .blog-header-inside-h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 30px auto 10px auto;
+  
+  }
+  
+  .blog-header-inside-p{  
+    text-align: center;
+    font-size: 1.2em;
+    margin: 40px auto 40px auto;
+  }
+  
+  .back-button{
+    width: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+    text-decoration: none;
+  }
+
+  .next-button{
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+  }
+
+.back-button:hover,.next-button:hover {
+    font-size: 2em;
+    background-color:white;
+    color: black;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+a:link { text-decoration: none; }
+
+a:visited { 
+    color:unset;
+    text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+  /*End of header styling  */
+
+#container{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container>div{
+    width: 19%;
+    min-height: 280px;
+    min-width: 188px;
+    padding: 20px;
+    margin: 5px;
+    border: 1px dotted black;
+}
+
+#container>div>p{
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+.addnewbook{
+    width: 80%;
+    margin: 20px auto;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+
+
+
+@media (max-width:700px){
+
+    #container{
+        width: 80%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+  
+    }
+
+    #container>div{
+        min-width: 200px;
+        min-height: 280px;
+        padding: 20px;
+        margin: 5px;
+        border: 1px dotted black;
+    }
+    
+
+}
+

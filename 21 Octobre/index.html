@@ -4,10 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
   <body>
-    
+    <header class="header-devblog">
+      <ul class="header-ul-devblog">
+        <li class="header-button-devblog"><a href="/My Portfolio Project/index.html">HOME</a></li>
+        <li class="header-button-devblog">
+          <a href="/My Portfolio Project/mydevblog/mydevblog.html">MY DEV BLOG</a>
+        </li>
+        <li class="header-button-devblog"><a href="">ABOUT</a></li>
+      </ul>
+
+      <h1 class="blog-header-inside-h1">SADETTIN'S DEV BLOG</h1>
+      <p class="blog-header-inside-p" style="font-size: 2em;">
+        &#8595; Booklist Exercise with for Loop in Javascript  &#8595;
+      </p>
+      <button class="back-button"> <a href="/My Portfolio Project/mydevblog/Exercices/Quiz_with_JS/index.html">BACK</a> </button>
+      <button class="next-button">NEXT WORK</button>
+      <div
+        class="thick-separation-bar"
+        style="width: 90%; height: 6px; background-color: black; margin: auto;"
+      ></div>
+
+    </header>
+
+
+
+    <h1>My Books List</h1>
+    <div class="addnewbook">
+      <fieldset>  
+        <legend> Add a New Book</legend>
+      <ul>
+        <li>
+          <label for="bookname">Book Name</label>
+          <input type="text" id="bookname"> 
+        </li>
+        <li>
+          <label for="author">Author</label>
+          <input type="text" id="author"> 
+        </li>
+        <li>
+          <label for="read">Read or not?</label>
+          <input type="text" id="read"> 
+        </li>
+        <li id="hiddenbookimagelist">
+          <label for="image">Add Image</label>
+          <input type="url" id="addimage">
+        </li>
+        <button onclick="addNewBook()">Add the Book</button>
+      </ul>
+    </fieldset>
+    </div>
+    <div id="container"> 
+   
+  </div>
+    <div></div>
     <script src="script.js"></script>
   </body>
 </html>

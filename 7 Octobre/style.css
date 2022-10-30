@@ -10,14 +10,92 @@
 html{
     box-sizing: border-box;
 }
+
+/* Here is general header part stlying for my works */
+
+.header-devblog{
+    width: 100%;
+    background-image: url("/images/background.png");  
+    background-size:contain;
+  }
+  
+  .header-ul-devblog{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .header-button-devblog{
+    display: inline-block;
+    padding: 10px;
+    margin:10px;
+    background-color: #F0DB4F;
+    border-radius: 5px;
+  }
+  .blog-header-inside-h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 30px auto 10px auto;
+  
+  }
+  
+  .blog-header-inside-p{  
+    text-align: center;
+    font-size: 1.2em;
+    margin: 40px auto 40px auto;
+  }
+  
+  .back-button{
+    width: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+    text-decoration: none;
+  }
+
+  .next-button{
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+  }
+
+.back-button:hover,.next-button:hover {
+    font-size: 2em;
+    background-color:white;
+    color: black;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+a:link { text-decoration: none; }
+
+a:visited { 
+    color:unset;
+    text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+  /*End of header styling  */
+
 body{
     background-color: rgb(207, 204, 204);
     padding: 20px 40px;
 }
 
 form{
-    width: 100%;
-    height: 100%;
+  
     padding: 40px 30px;
     background-color: white;
     

@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-
-    <label for="new-task">To do List</label>
-    <input type="text" id="new-task"> <br><br>
-    <button  id="add-newtask" onclick="addNewTask()">Add new task</button> <br>
-    <div id="container"></div>
-
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>To do List</h1>
+      <label for="new.task">Add New Task</label>
+      <input type="text" id="new-task" /> <br /><br />
+      <button id="add-newtask" onclick="addNewTask()">Add</button>
+      <br />
+      <div id="container"></div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
