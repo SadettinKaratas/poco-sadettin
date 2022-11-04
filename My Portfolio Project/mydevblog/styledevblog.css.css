@@ -11,6 +11,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
 }
 
 .header-devblog{
@@ -20,9 +21,12 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: url("/My Portfolio Project/images/pexels-markus-spiske-330771.jpg");
-  background-size: cover;
-  opacity: 1; */
+  background-image: url("/My Portfolio Project/images/generalheaderbackground.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-color: #0f1225;
+  color: #adbccd;
+
   
 }
 .header-ul-devblog{
@@ -56,6 +60,11 @@ html {
   border-radius: 5px;
 }
 
+.header-button-devblog:hover{
+  transform: scale(1.2);
+  background-color: #adbccd;
+}
+
 .mydevblog-articles-container{
   width: 100%;
   display: flex;
@@ -65,21 +74,44 @@ html {
 }
 .articles-devblog{
   width: 80%;
-  font-size: 1.3em;
+  font-size: 1.5em;
   border-bottom: dotted;
-  padding: 10px;
+  padding: 20px;
 }
 
 .articles-devblog:hover{
   background-color: lightcoral;
   font-size: 1.5em;
   padding-left: 30px;
+  color: black;
+
 }
+
+footer{
+  width: 100%;
+  height: 150px;
+  margin-top: 200px;
+  background-color: #0f1225;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+button{
+  color: #0f1225;
+  font-size: 1em;
+  background-color: #adbccd;
+  scroll-behavior: smooth;
+  cursor: pointer;
+  padding: 5px;
+font-weight: bolder;
+}
+
 
 a:link { text-decoration: none; }
 
 a:visited { 
-    color:purple;
     text-decoration: none; }
 
 a:hover { text-decoration: none; }

@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header-devblog{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/My Portfolio Project/images/generalheaderbackground.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-color: #0f1225;
+  color: #adbccd;
+  font-family: 'Indie Flower', cursive;
+
+  
+}
+.header-ul-devblog{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.blog-header-inside-h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  margin: 50px auto 20px auto;
+
+} 
+
+.blog-header-inside-p{  
+  text-align: center;
+  font-size: 1.2em;
+  margin: 40px auto 40px auto;
+}
+
+.header-button-devblog{
+  display: inline-block;
+  padding: 10px;
+  margin: auto 10px;
+  background-color: #F0DB4F;
+  border-radius: 5px;
+  color: black;
+}
+
+.header-button-devblog:hover{
+  transform: scale(1.2);
+  background-color: #adbccd;
+}
+
+.back-button {
+  width: 80px;
+  background-color: #0f1225;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top:400px;
+  left: 10px;
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+}
+
+.next-button {
+  width: 80px;
+  background-color: #0f1225;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top:400px;
+  right: 20px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.back-button:hover,
+.next-button:hover {
+  font-size: 2em;
+  background-color: #0f1225;
+  color:white;
+  width: fit-content;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: unset;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/*End of header styling  */
+
+
+
+.chesstable {
+  width: 407px;
+  height: 407px;
+  border: 1px solid black;
+  position: relative;
+  margin: 100px auto;
+}
+
+.row1 td:nth-of-type(odd) {
+  background-color: black;
+}
+.row2 td:nth-of-type(even) {
+  background-color: black;
+}
+.row3 td:nth-of-type(odd) {
+  background-color: black;
+}
+.row4 td:nth-of-type(even) {
+  background-color: black;
+}
+.row5 td:nth-of-type(odd) {
+  background-color: black;
+}
+.row6 td:nth-of-type(even) {
+  background-color: black;
+}
+.row7 td:nth-of-type(odd) {
+  background-color: black;
+}
+.row8 td:nth-of-type(even) {
+  background-color: black;
+}
+h4 {
+  margin-left: 100px;
+  text-decoration: underline;
+  margin-top: 50px;
+}
+
+pre {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+pre code {
+  background-color: #adbccd;
+  border: 1px dotted black;
+  display: block;
+  padding: 20px;
+  color: #0f1225;
+  font-weight: bold;

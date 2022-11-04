@@ -13,7 +13,7 @@ html {
   box-sizing: border-box;
 }
 
-.header,{
+.header{
 
   width: 100%;
   height: 60px;
@@ -22,6 +22,7 @@ html {
   align-items: center;
   
 }
+
 .header-button{
   display: inline-block;
   padding: 10px;
@@ -32,6 +33,7 @@ html {
 a{
   text-decoration: none;
 }
+
 .main-container {
   display: flex;
   flex-wrap: nowrap;
@@ -47,14 +49,16 @@ a{
   border: 1px solid black;
 }
 
+/* Start of Aside Container */
 .aside-left-container {
+  width: 13%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: sticky;
   top: 100px;
-  width: 13%;
-  height: 100%;
+
 }
 
 .itskills-container{
@@ -72,10 +76,8 @@ a{
  
 }
 
-
 .language-skills{
   width: 90%;
-  margin-top: 40px;
 }
 ul{
   list-style-type: none;
@@ -92,6 +94,9 @@ ul{
 
 }
 
+/* End of Aside Left Container */
+
+/* start of right aside container */
 .contact-container {
   width: 12%;
   height: 100%;
@@ -100,21 +105,29 @@ ul{
   justify-content: center;
   position: sticky;
   top: 100px;
-
+  margin: 0 5px
+ 
+ 
 }
 
 fieldset{
   border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1em;
+ 
 }
 
 .civil-status{
-  width: 90%;
+  width: 100%;
 }
 
 .civil-list{
   margin: 0;
   padding: 0;
 }
+
+
+/* Start of Main CV Styling */
 
 .black-bar {
   width: 98%;
@@ -177,80 +190,54 @@ ul {
   min-height: 300px;
   padding-left: 5px;
 }
-.up-button{
+/* End of Main CV Styling */
 
-  width: 60px;
-  display: block;
-  height: auto;
-  color: blanchedalmond;
-  position: sticky;
-  position: absolute;
-  z-index: 2;
-  left: 600px;
-  bottom: 50px;
+
+/* Go Up Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 200px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(18, 18, 18);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
 
-/* Start of styling mydevblog.html page */
-
-
-.header-devblog{
-  width: 100%;
+#myBtn:hover {
+  background-color: #555;
 }
 
-.header-ul-devblog{
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-.header-button-devblog{
+/* End of Go up button */
+
+.popup-containers {
+  position: relative;
   display: inline-block;
-  padding: 10px;
-  background-color: #F0DB4F;
-  border-radius: 5px;
-}
-.blog-header-inside-h1{
-  text-align: center;
-  font-weight: bold;
-  font-size: 3em;
-  margin: 40px auto 40px auto;
-
+  cursor: pointer;
 }
 
-.blog-header-inside-p{  
-  text-align: center;
-  font-size: 1.2em;
-  margin: 40px auto 40px auto;
-}
-
-
-.mydevblog-articles-container{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.articles-devblog{
+.popup-images{
+  visibility: hidden;
   width: 80%;
-  font-size: 1.3em;
-  border-bottom: dotted;
-  padding: 10px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
 }
 
-.articles-devblog:hover{
-  background-color: lightcoral;
-  font-size: 1.5em;
-  padding-left: 30px;
+/* .popup-containers .popup-images::after {
+
+  position: absolute;
 }
 
-
-
-
-
-
+.popup-containers .show {
+  visibility: visible;
+} */
 
 
 

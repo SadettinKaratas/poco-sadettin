@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <header class="header-devblog">
+      <ul class="header-ul-devblog">
+        <li class="header-button-devblog"><a href="/My Portfolio Project/index.html ">HOME</a></li>
+        <li class="header-button-devblog">
+          <a href="/My Portfolio Project/mydevblog/mydevblog.html">MY DEV BLOG</a>
+        </li>
+        <li class="header-button-devblog"><a href="">ABOUT</a></li>
+      </ul>
+
+      <h1 class="blog-header-inside-h1">SADETTIN'S DEV BLOG</h1>
+      <p class="blog-header-inside-p" style="font-size: 2em;">
+        &#8595; To-Do List with Javascriopt  &#8595;
+      </p>
+      <button class="back-button"> <a href="/My Portfolio Project/mydevblog/mydevblog.html">BACK</a> </button>
+      <button class="next-button"> <a href="/My Portfolio Project/mydevblog/Exercices/JavaScript Project/index.html">NEXT </a> </button>
+   
+
+    </header>
+    <div class="main-container">
+      <h1>To do List</h1>
+      <label for="new.task">Add New Task</label>
+      <input type="text" id="new-task" /> <br /><br />
+      <button id="add-newtask" onclick="addNewTask()">Add</button>
+      <br />
+      <div id="container" class="container"></div>
+    </div>
+
+    <h4>My Codes;</h4>
+    <pre>
+      <code>
+        let toDolist;
+        let taskList;
+        let container = document.getElementById("container");
+        let taskItem;
+        let delButton;
+        let markAsDone;
+        let textSpan;
+        
+        function addNewTask() {
+          toDolist = document.createElement("ul");
+          container.appendChild(toDolist);
+          taskList = document.createElement("li");
+          toDolist.appendChild(taskList);
+        
+          textSpan = document.createElement("span");
+          taskItem = document.createTextNode(document.getElementById("new-task").value);
+          textSpan.appendChild(taskItem);
+          taskList.appendChild(textSpan);
+        
+          markAsDone = document.createElement("span");
+          markAsDone.textContent = " Done ";
+          markAsDone.style.border = "1px solid black";
+          markAsDone.className = "done";
+        
+          delButton = document.createElement("span");
+        
+          taskList.appendChild(markAsDone);
+          delButton.textContent = " Delete";
+          delButton.style.border = "1px solid black";
+          delButton.className = "close";
+          taskList.appendChild(delButton);
+        
+          var close = document.getElementsByClassName("close");
+          var done = document.getElementsByClassName("done");
+          var i;
+        
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+              var div = this.parentElement;
+              div.style.display = "none";
+            };
+          }
+        
+          for (i = 0; i < done.length; i++) {
+            done[i].onclick = function () {
+              var div = this.parentElement;
+              var fChild = div.firstElementChild;
+              fChild.style.textDecoration = "line-through";
+            };
+          }
+        }
+        
+      </code>
+    </pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header class="header-devblog">
+      <ul class="header-ul-devblog">
+        <li class="header-button-devblog"><a href="/My Portfolio Project/index.html">HOME</a></li>
+        <li class="header-button-devblog">
+          <a href="/My Portfolio Project/mydevblog/mydevblog.html">MY DEV BLOG</a>
+        </li>
+        <li class="header-button-devblog"><a href="">ABOUT</a></li>
+      </ul>
+
+      <h1 class="blog-header-inside-h1">SADETTIN'S DEV BLOG</h1>
+      <p class="blog-header-inside-p" style="font-size: 2em;">
+        &#8595; CSS Flexbox Responsive Layout Exemple  &#8595;
+      </p>
+      <button class="back-button"> <a href="/My Portfolio Project/mydevblog/Exercices/form_exercise/index.html">BACK</a> </button>
+      <button class="next-button"> <a href="/My Portfolio Project/mydevblog/Exercices/Swissflag/index.html">NEXT</a> </button>
+    
+    </header>
+
+    <header class="subpage-header">
+      <h1>Header</h1>
+    </header>
+
+    <main>
+
+      <section id="content">
+        <h2>Content</h2>
+      </section>
+
+      <section id="container">
+        <article>
+          <h2>Sign up</h2>
+        </article>
+
+        <article>
+          <h2>Feature 1</h2>
+        </article>
+
+        <article>
+          <h2>Feature 2</h2>
+        </article>
+
+        <article>
+          <h2>Feature 3</h2>
+        </article>
+      </section>
+    </main>
+
+    <h4>My Codes;</h4>
+<pre>
+  <code>
+    .subpage-header{
+      width: 100%;
+      min-height: 300px;
+      background-color: lightblue;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  #content{
+      width: 100%;
+      min-height: 300px;
+      background-color: lightcoral;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  
+  #container{
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  article{
+      width: 100%;
+      min-height:300px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  article:first-child{ 
+      background-color: brown;
+  }
+  article:nth-child(2){ 
+      background-color: lightseagreen;
+  }
+  article:nth-child(3){ 
+      background-color: lightslategray;
+  }
+  article:nth-child(4){ 
+      background-color: rgb(218, 174, 93);
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px){
+     #content, #container {
+          flex-direction: row;
+          flex-wrap: wrap;
+      }
+  
+      article{
+          width: 50%;
+      }
+  }
+  
+  @media (min-width: 1024px){
+      main{
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      
+      #content, #container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+      }
+  
+      article{
+          width: 33.3%;
+      }
+  
+      article:first-child{
+          width: 100%;
+          min-height: 200px;
+          order: 4;
+      }
+  }
+  </code>
+</pre>
+  </body>
+</html>

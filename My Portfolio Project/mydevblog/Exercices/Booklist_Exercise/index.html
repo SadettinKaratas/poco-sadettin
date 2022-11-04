@@ -4,63 +4,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <title>Booklist</title>
   </head>
   <body>
     <header class="header-devblog">
       <ul class="header-ul-devblog">
-        <li class="header-button-devblog"><a href="/My Portfolio Project/index.html">HOME</a></li>
         <li class="header-button-devblog">
-          <a href="/My Portfolio Project/mydevblog/mydevblog.html">MY DEV BLOG</a>
+          <a href="/My Portfolio Project/index.html">HOME</a>
+        </li>
+        <li class="header-button-devblog">
+          <a href="/My Portfolio Project/mydevblog/mydevblog.html"
+            >MY DEV BLOG</a
+          >
         </li>
         <li class="header-button-devblog"><a href="">ABOUT</a></li>
       </ul>
 
       <h1 class="blog-header-inside-h1">SADETTIN'S DEV BLOG</h1>
-      <p class="blog-header-inside-p" style="font-size: 2em;">
-        &#8595; CSS Flexbox Responsive Layout Exemple  &#8595;
+      <p class="blog-header-inside-p" style="font-size: 2em">
+        &#8595; Booklist Exercise with for Loop in Javascript &#8595;
       </p>
-      <button class="back-button"> <a href="/My Portfolio Project/mydevblog/mydevblog.html">BACK</a> </button>
-      <button class="next-button">NEXT WORK</button>
-      <div
-        class="thick-separation-bar"
-        style="width: 90%; height: 6px; background-color: black; margin: auto;"
-      ></div>
-
+      <button class="back-button">
+        <a
+          href="/My Portfolio Project/mydevblog/Exercices/JavaScript Project/index.html"
+          >BACK</a
+        >
+      </button>
+      <button class="next-button">
+        <a
+          href="/My Portfolio Project/mydevblog/Exercices/Quiz_with_JS/index.html"
+          >NEXT</a
+        >
+      </button>
     </header>
 
-
-
-    <h1>My Books List</h1>
+    <h1>My Book List</h1>
     <div class="addnewbook">
-      <fieldset>  
-        <legend> Add a New Book</legend>
-      <ul>
-        <li>
-          <label for="bookname">Book Name</label>
-          <input type="text" id="bookname"> 
-        </li>
-        <li>
-          <label for="author">Author</label>
-          <input type="text" id="author"> 
-        </li>
-        <li>
-          <label for="read">Read or not?</label>
-          <input type="text" id="read"> 
-        </li>
-        <li id="hiddenbookimagelist">
-          <label for="image">Add Image</label>
-          <input type="url" id="addimage">
-        </li>
-        <button onclick="addNewBook()">Add the Book</button>
-      </ul>
-    </fieldset>
+      <fieldset>
+        <legend>Add a New Book</legend>
+        <ul>
+          <li>
+            <label for="bookname">Book Name</label>
+            <input type="text" id="bookname" />
+          </li>
+          <li>
+            <label for="author">Author</label>
+            <input type="text" id="author" />
+          </li>
+          <li>
+            <label for="read">Read or not?</label>
+            <input type="text" id="read" />
+          </li>
+          <li id="hiddenbookimagelist">
+            <label for="image">Add Image</label>
+            <input type="url" id="addimage" />
+          </li>
+          <button onclick="addNewBook()">Add the Book</button>
+        </ul>
+      </fieldset>
     </div>
-    <div id="container"> 
-   
-  </div>
+    <div id="container"></div>
     <div></div>
+    <h4>My Codes;</h4>
+    <pre>
+      <code>
+let bookTitle;
+let bookImage;
+let bookAuthor;
+let readOrNot;
+let ulList;
+let liForImage;
+let eachBookContainer
+
+
+let container = document.getElementById("container");
+//Creating my first heading
+
+for (var i = 0; i <= books.length-1; i++) {
+  //   Create 1st paragraph for title
+  eachBookContainer = document.createElement("div");
+  container.appendChild(eachBookContainer)
+  bookTitle = document.createElement("p");
+  eachBookContainer.appendChild(bookTitle);
+  bookTitle.textContent = books[i].title;
+  ulList = document.createElement("ul");
+  eachBookContainer.appendChild(ulList);
+
+  //   Create 2nd paragraph for author
+  bookAuthor = document.createElement("li");
+  ulList.appendChild(bookAuthor);
+  bookAuthor.textContent = "By : " + books[i].author;
+
+  //   Create 3rd paragraph for read-or-not
+  readOrNot = document.createElement("li");
+  ulList.appendChild(readOrNot);
+  if (books[i].alreadyRead == false) {
+    readOrNot.textContent = "Not Read";
+  } else {
+    readOrNot.textContent = "Read";
+    bookImage.style.border = "10px red solid";
+  }
+  //Creating img tag
+  liForImage = document.createElement("li");
+  ulList.appendChild(liForImage);
+  bookImage = document.createElement("img");
+  bookImage.src = books[i].img;
+  bookImage.style.width = "100px";
+  liForImage.appendChild(bookImage);
+  
+}
+
+function addNewBook() {
+ let newBookTitle = document.getElementById("bookname").value;
+ let newBookAuthor = document.getElementById("author").value ;
+ let newBookReadorNot = document.getElementById("read").value ;
+ let newBookImg = document.getElementById("addimage") ;
+ 
+ let newBookDiv = document.createElement("div");
+ let newBookTitlePara= document.createElement("p");
+ let newBookUl= document.createElement("ul");
+ let newBookliAuthor = document.createElement("li");
+ let newBookliRead = document.createElement("li");
+ let newBookliImg= document.createElement("li");
+
+ newBookTitlePara.textContent = newBookTitle;
+ newBookliAuthor.textContent = newBookAuthor;
+ newBookliRead.textContent = newBookReadorNot;
+ newBookliImg.innerHTML = newBookImg;
+
+
+newBookDiv.appendChild(newBookTitlePara);
+newBookDiv.appendChild(newBookUl);
+newBookUl.appendChild(newBookliAuthor);
+newBookUl.appendChild(newBookliRead);
+newBookUl.appendChild(newBookliImg);
+container.appendChild(newBookDiv)
+
+}
+
+      </code>
+    </pre>
+
     <script src="script.js"></script>
   </body>
 </html>

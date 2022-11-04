@@ -1,6 +1,31 @@
-let diploma = document.getElementById("diploma-photo")
-diploma.onclick = function(){
-    document.getElementById("diploma-image").style.display = "block";
-    document.getElementById("diploma-image").style.position = "absolute";
-    document.getElementById("diploma-image").style.zIndex = "0";
+
+let popupImages = document.getElementsByClassName("popup-images")
+
+ function showImages(){
+    popupImages.style.visibility = "visible";
 }
+
+
+
+
+
+
+// GO UP BUTTON//
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// END OF GO UP BUTTON//
