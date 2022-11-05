@@ -14,7 +14,15 @@ html {
 }
 
 body{
-  background-color: lightblue;
+  background-color: white;
+}
+
+.profile:hover{
+  width: 100%;
+  font-size: 2em;
+  height: 40vh;
+
+  background-color: #F0DB4F;
 }
 
 .header{
@@ -32,6 +40,11 @@ body{
   padding: 10px;
   background-color: #F0DB4F;
   border-radius: 5px;
+  color: white;
+}
+
+.header-button:hover{
+  transform: scale(1.2);
 }
 
 a{
@@ -123,12 +136,10 @@ fieldset{
 
 .civil-status{
   width: 100%;
+
 }
 
-.civil-list{
-  margin: 0;
-  padding: 0;
-}
+
 
 
 /* Start of Main CV Styling */
@@ -249,7 +260,19 @@ ul {
   right: 0;
   z-index: 1;
 }
+.civil-status-list{
+margin: 0;
+padding: 0;
+}
 
+
+.right-icons{
+  margin-bottom: -4px;
+  margin-top: 10px;
+  width: 20px; 
+  height:20px;
+
+} 
 
 a:link { text-decoration: none; }
 

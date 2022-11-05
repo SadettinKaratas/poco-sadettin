@@ -14,7 +14,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/My Portfolio Project/images/generalheaderbackground.png");
+  background-image: url("../../../images/generalheaderbackground.png");
   background-size: contain;
   background-repeat: repeat-y;
   background-color: #0f1225;
